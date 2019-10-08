@@ -26,4 +26,6 @@ Since Docker for Mac uses a virtual machine. MacStand is a pre-set development e
 More information about vagrant commands can be found here - https://www.vagrantup.com/docs/cli/
 
 ## Other Notes
-Sometimes when you start and restart vagrant you will need to run the `docker start` command in order to turn on docker. 
+Sometimes when you start and restart vagrant you will need to run the `docker start` command in order to turn on docker.
+
+For macOS 10.15 (Catalina) requires explicit paths for NFS Sync, for the time being you will need to add /System/Volumes/Data/Users/[USERNAME]/[PROJECT-PATH] to line 5 of the vagrant file.
